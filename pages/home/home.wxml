@@ -1,0 +1,4 @@
+<!--pages/home/home.wxml-->
+<text>hello world!!</text>
+<button size="mini">go</button>
+
