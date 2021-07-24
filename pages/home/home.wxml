@@ -1,7 +1,3 @@
 <!--pages/home/home.wxml-->
 <text>hello world!!</text>
 <button size="mini">go</button>
-
-<text>知识点二</text>
-<text>hhhhh</text>
-
