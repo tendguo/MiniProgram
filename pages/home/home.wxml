@@ -1,7 +1,25 @@
-<!--pages/home/home.wxml-->
-<text>hello world!!</text>
-<button size="mini">go</button>
+<!-- 首页轮播图的展示 -->
+<w-swiper banners="{{banners}}" bind:imageload="handleImageLoad"></w-swiper>
+<!-- 推荐展示 -->
+<recommend recommends="{{recommends}}" 
+          ></recommend>
+<!-- 流行展示 -->
+<popular></popular>
+<!-- tab-control展示 -->
+<tab-control titles="{{titles}}" 
+            id="tab-control"
+            bind:itemClick="itemClick"
+            class="{{isTabShow ? 'fixed' : ''}}"
+            ></tab-control>
+<tab-control titles="{{titles}}" wx-if="{{isTabShow}}"></tab-control>
+<!-- 商品展示 -->
+<w-goodsList goods="{{goods[curType].list}}"></w-goodsList>
+<block wx:for="{{100}}" wx:key="index">
+  <view>{{item}}</view>
 
-<text>知识点一</text>
-<text>hhhhh</text>
+</block>
+
+<!-- 回到顶部 -->
+
+<back-top bind:tap="backTop" wx-if="{{isShow}}"></back-top>
 

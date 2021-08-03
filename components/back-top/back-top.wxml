@@ -1,0 +1,5 @@
+<!--components/back-top/back-top.wxml-->
+
+<view class="back">
+  <image src="/assets/common/top.png" mode="widthFix"></image>
+</view>

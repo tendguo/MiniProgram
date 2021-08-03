@@ -1,0 +1,4 @@
+<!--pages/category/category.wxml-->
+<text>pages/category/category.wxml</text>
+<navigator open-type="navigateBack">fanhui</navigator>
+
